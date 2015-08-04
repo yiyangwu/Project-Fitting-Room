@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsZ-0c-6AS">
+                                <rect key="frame" x="67" y="372.5" width="81" height="22"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                <state key="normal" title="Man's Collection">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="4pZ-mX-sVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFo-Yf-7JA">
+                                <rect key="frame" x="219" y="372.5" width="97" height="22"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                <state key="normal" title="Woman's Collection">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="ZcZ-mN-EJy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fitting Room" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5d-q6-IXw">
+                                <rect key="frame" x="108" y="150" width="185" height="30"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DFo-Yf-7JA" secondAttribute="centerX" constant="-80" id="3HK-es-VEt"/>
+                            <constraint firstAttribute="centerX" secondItem="zsZ-0c-6AS" secondAttribute="centerX" constant="80" id="5Ed-UE-1GE"/>
+                            <constraint firstAttribute="centerY" secondItem="zsZ-0c-6AS" secondAttribute="centerY" constant="-50" id="aNo-bJ-hGp"/>
+                            <constraint firstAttribute="centerY" secondItem="DFo-Yf-7JA" secondAttribute="centerY" constant="-50" id="zmo-aN-tde"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="483.27333333333331"/>
+        </scene>
+        <!--View Man-->
+        <scene sceneID="4v8-W2-Vt4">
+            <objects>
+                <viewController id="4Vu-yY-6Qa" customClass="ViewMan" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="98W-B3-o2Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="q3W-RP-qd9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="au8-C1-VP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vg2-uf-6oI">
+                                <rect key="frame" x="103" y="28" width="169" height="292"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66P-wW-p6q">
+                                <rect key="frame" x="144" y="395" width="86" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Black T-shirt">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="pOx-AH-eRc"/>
+                                    <segue destination="pmT-BE-2dI" kind="modal" identifier="toBrowsePage" id="Mij-sJ-TRy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8N-ql-eO7">
+                                <rect key="frame" x="143" y="433" width="88" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Black T-Shirt">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button2:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="haD-nu-5zF"/>
+                                    <segue destination="eey-cu-v5f" kind="modal" identifier="second" id="gPl-Wg-3Xn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u69-EI-HIe">
+                                <rect key="frame" x="16" y="617" width="40" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="9UH-eO-XRj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeS-iw-xD0">
+                                <rect key="frame" x="109" y="328" width="156" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Upload Your Picture">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadbutton:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="3JJ-Hm-ro3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-jH-qeh">
+                                <rect key="frame" x="168" y="471" width="38" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Short">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button3:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="5Fq-hR-U3w"/>
+                                    <segue destination="eT1-4k-9dO" kind="modal" identifier="third" id="GFJ-yQ-4nD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimage" destination="vg2-uf-6oI" id="f1E-tt-hbg"/>
+                        <outlet property="personalimagenew" destination="vg2-uf-6oI" id="uJa-14-jmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbv-L5-1vB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.5" y="-1349.5"/>
+        </scene>
+        <!--View Man3-->
+        <scene sceneID="u5Z-p9-Gte">
+            <objects>
+                <viewController id="eey-cu-v5f" customClass="ViewMan3" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TOJ-KJ-ffc"/>
+                        <viewControllerLayoutGuide type="bottom" id="c3S-V6-msq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZoA-f4-kHl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2Z-EJ-C8u">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="RPN-f2-bo8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAX-IM-XaO">
+                                <rect key="frame" x="228" y="28" width="131" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Go to Fitting Room">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gofit:" destination="pmT-BE-2dI" eventType="touchUpInside" id="Uyz-go-UO2"/>
+                                    <action selector="newbutton:" destination="eey-cu-v5f" eventType="touchUpInside" id="izW-RP-g4B"/>
+                                    <segue destination="i91-gp-ZFH" kind="modal" identifier="gotonext" id="fwE-7e-ZK4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-cj-5AC">
+                                <rect key="frame" x="228" y="425" width="131" height="220"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man-t-shirt1" translatesAutoresizingMaskIntoConstraints="NO" id="nz1-B9-hcb">
+                                <rect key="frame" x="75" y="66" width="225" height="253"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personal3" destination="7hf-cj-5AC" id="F9X-XH-xaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeE-4U-gZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.5" y="-1349.5"/>
+        </scene>
+        <!--View Man4-->
+        <scene sceneID="vrv-aX-fAJ">
+            <objects>
+                <viewController id="i91-gp-ZFH" customClass="ViewMan4" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gu3-Gy-wpP"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ed-l0-sdF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L7E-kx-gDM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-pS-LTU">
+                                <rect key="frame" x="48" y="28" width="279" height="589"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVL-eR-epc">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="D2x-mp-NnP"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man-t-shirt1without" translatesAutoresizingMaskIntoConstraints="NO" id="DYA-a2-fOS">
+                                <rect key="frame" x="85" y="158" width="204" height="230"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YJv-Fk-VcI" appends="YES" id="CYt-G0-jkr"/>
+                                    <outletCollection property="gestureRecognizers" destination="0MS-wp-sQM" appends="YES" id="F7l-OX-0b0"/>
+                                    <outletCollection property="gestureRecognizers" destination="reS-ft-kmm" appends="YES" id="vIp-bn-mhc"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Geh-pS-LTU" firstAttribute="leading" secondItem="L7E-kx-gDM" secondAttribute="leadingMargin" constant="32" id="1Xh-fM-KUp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Geh-pS-LTU" secondAttribute="trailing" constant="32" id="Fr1-8b-JC0"/>
+                            <constraint firstItem="Geh-pS-LTU" firstAttribute="top" secondItem="gu3-Gy-wpP" secondAttribute="bottom" constant="8" id="cSM-1N-sbP"/>
+                            <constraint firstItem="5Ed-l0-sdF" firstAttribute="top" secondItem="Geh-pS-LTU" secondAttribute="bottom" constant="50" id="wCK-2N-CV2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimage4" destination="Geh-pS-LTU" id="66H-Ph-v4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO9-8B-qcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="YJv-Fk-VcI">
+                    <connections>
+                        <action selector="handlePinch:" destination="i91-gp-ZFH" id="XoM-yo-yCD"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="0MS-wp-sQM">
+                    <connections>
+                        <action selector="handleRotate:" destination="i91-gp-ZFH" id="J1X-LC-1jV"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="reS-ft-kmm">
+                    <connections>
+                        <action selector="handlePan:" destination="i91-gp-ZFH" id="4Wk-n0-qKO"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1316.5" y="-1349.5"/>
+        </scene>
+        <!--View Man6-->
+        <scene sceneID="nIj-nd-ioX">
+            <objects>
+                <viewController id="YuB-r8-AqQ" customClass="ViewMan6" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wAz-hd-U6k"/>
+                        <viewControllerLayoutGuide type="bottom" id="2az-PE-YYJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hOd-ya-7HH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tgM-G3-p8v">
+                                <rect key="frame" x="48" y="28" width="279" height="589"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2T-ha-nuf">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="cf0-pT-Bvm"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man-t-shirt2" translatesAutoresizingMaskIntoConstraints="NO" id="T9U-wz-53B">
+                                <rect key="frame" x="98" y="247" width="179" height="173"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qQl-Qa-p4V" appends="YES" id="ehj-MS-E6S"/>
+                                    <outletCollection property="gestureRecognizers" destination="QoA-EB-j23" appends="YES" id="fPN-Xh-iJl"/>
+                                    <outletCollection property="gestureRecognizers" destination="ASl-Xh-2GY" appends="YES" id="ZA4-5c-VTv"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgM-G3-p8v" secondAttribute="trailing" constant="32" id="4oU-ha-n5r"/>
+                            <constraint firstItem="2az-PE-YYJ" firstAttribute="top" secondItem="tgM-G3-p8v" secondAttribute="bottom" constant="50" id="72I-5G-Yze"/>
+                            <constraint firstItem="tgM-G3-p8v" firstAttribute="top" secondItem="wAz-hd-U6k" secondAttribute="bottom" constant="8" id="Apd-wx-u3x"/>
+                            <constraint firstItem="tgM-G3-p8v" firstAttribute="leading" secondItem="hOd-ya-7HH" secondAttribute="leadingMargin" constant="32" id="cPl-0i-uWL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimage6" destination="tgM-G3-p8v" id="sh1-am-VAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUS-Vr-k5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qQl-Qa-p4V">
+                    <connections>
+                        <action selector="handlePan:" destination="YuB-r8-AqQ" id="Rjd-AZ-wuB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="QoA-EB-j23">
+                    <connections>
+                        <action selector="handleRotate:" destination="YuB-r8-AqQ" id="xQu-O8-TYw"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="ASl-Xh-2GY">
+                    <connections>
+                        <action selector="handlePinch:" destination="YuB-r8-AqQ" id="bj0-pq-vtW"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1316.5" y="-593.5"/>
+        </scene>
+        <!--View Man5-->
+        <scene sceneID="3RC-tp-UPp">
+            <objects>
+                <viewController id="eT1-4k-9dO" customClass="ViewMan5" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nY9-2L-T0o"/>
+                        <viewControllerLayoutGuide type="bottom" id="92f-7P-GaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rWQ-KZ-FJd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSB-1N-dT5">
+                                <rect key="frame" x="228" y="28" width="131" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Go to Fitting Room">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gofit:" destination="pmT-BE-2dI" eventType="touchUpInside" id="i16-Df-CLz"/>
+                                    <action selector="newbutton:" destination="eey-cu-v5f" eventType="touchUpInside" id="JqO-kR-fAA"/>
+                                    <action selector="newbutton:" destination="eT1-4k-9dO" eventType="touchUpInside" id="Wib-hX-V5X"/>
+                                    <segue destination="YuB-r8-AqQ" kind="modal" identifier="gogo" id="Qg5-LI-mbP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man-t-shirt2" translatesAutoresizingMaskIntoConstraints="NO" id="t7b-eC-02B">
+                                <rect key="frame" x="47" y="66" width="281" height="274"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57K-Oa-gJ5">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="Rz5-KV-wPI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1f0-Kf-B2T">
+                                <rect key="frame" x="228" y="427" width="131" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personal5" destination="1f0-Kf-B2T" id="jQb-Ql-btx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnB-7z-qS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.5" y="-593.5"/>
+        </scene>
+        <!--View Man1-->
+        <scene sceneID="Z8K-3f-8tD">
+            <objects>
+                <viewController id="pmT-BE-2dI" customClass="ViewMan1" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="le3-ec-6z8"/>
+                        <viewControllerLayoutGuide type="bottom" id="kLV-jq-gnK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m2y-6a-f5z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5x0-hR-4pJ">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="geQ-JD-zAk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man-t-shirt" translatesAutoresizingMaskIntoConstraints="NO" id="sMx-Tn-ahy">
+                                <rect key="frame" x="68" y="66" width="238" height="262"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGU-tQ-AXx">
+                                <rect key="frame" x="228" y="28" width="131" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Go to Fitting Room">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gofit:" destination="pmT-BE-2dI" eventType="touchUpInside" id="X2E-Rp-Wsg"/>
+                                    <segue destination="rcX-hE-ejl" kind="modal" identifier="goodtogo" id="0Es-IJ-3rf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Sm-Be-BHH">
+                                <rect key="frame" x="228" y="427" width="131" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personal1" destination="3Sm-Be-BHH" id="LUR-gq-Q0p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DpN-et-o9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.5" y="-2340.5"/>
+        </scene>
+        <!--View Man2-->
+        <scene sceneID="733-IS-YgH">
+            <objects>
+                <viewController id="rcX-hE-ejl" customClass="ViewMan2" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aCS-Tp-kbJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="b58-Bn-c4K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KgK-vC-HNF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVn-Be-LGQ">
+                                <rect key="frame" x="48" y="28" width="279" height="589"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRs-sm-Cei">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Vu-yY-6Qa" kind="modal" id="mKz-HS-n8k"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man-t-shirt2without" translatesAutoresizingMaskIntoConstraints="NO" id="YnO-TZ-37U">
+                                <rect key="frame" x="85" y="155" width="205" height="235"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QeS-lz-aWy" appends="YES" id="a95-DJ-b2c"/>
+                                    <outletCollection property="gestureRecognizers" destination="dJa-9b-WAQ" appends="YES" id="COl-hL-acv"/>
+                                    <outletCollection property="gestureRecognizers" destination="yWa-Ny-7sc" appends="YES" id="h8F-7S-Lrc"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uVn-Be-LGQ" firstAttribute="leading" secondItem="KgK-vC-HNF" secondAttribute="leadingMargin" constant="32" id="BHC-bD-OOC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uVn-Be-LGQ" secondAttribute="trailing" constant="32" id="PlG-i4-bWo"/>
+                            <constraint firstItem="b58-Bn-c4K" firstAttribute="top" secondItem="uVn-Be-LGQ" secondAttribute="bottom" constant="50" id="xhy-Zu-LZn"/>
+                            <constraint firstItem="uVn-Be-LGQ" firstAttribute="top" secondItem="aCS-Tp-kbJ" secondAttribute="bottom" constant="8" id="yOP-dU-vNk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimage2" destination="uVn-Be-LGQ" id="jGM-kM-qzP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90x-tu-Mwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="QeS-lz-aWy">
+                    <connections>
+                        <action selector="handleRotate:" destination="rcX-hE-ejl" id="zZT-nR-H2j"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="dJa-9b-WAQ">
+                    <connections>
+                        <action selector="handlePinch:" destination="rcX-hE-ejl" id="S7o-85-geV"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="yWa-Ny-7sc">
+                    <connections>
+                        <action selector="handlePan:" destination="rcX-hE-ejl" id="EXF-gn-v0g"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1451.5" y="-2340.5"/>
+        </scene>
+        <!--View Woman-->
+        <scene sceneID="IDg-hC-6fh">
+            <objects>
+                <viewController id="Z6e-Yx-ySo" customClass="ViewWoman" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u7l-Si-5Uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="9pp-wu-paj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AXq-L7-taO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQt-VU-um1">
+                                <rect key="frame" x="16" y="617" width="40" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="cH8-3M-w3p"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gs-h5-snM">
+                                <rect key="frame" x="147" y="28" width="80" height="292"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lE-ek-o8T">
+                                <rect key="frame" x="151" y="394" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Red Dress">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="ebU-Eh-FpZ"/>
+                                    <action selector="Buttonw:" destination="Z6e-Yx-ySo" eventType="touchUpInside" id="jAa-QS-esQ"/>
+                                    <segue destination="lPQ-YT-aqi" kind="modal" identifier="toBrowsePagew" id="EGg-Hk-sb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOv-cv-t2Q">
+                                <rect key="frame" x="146" y="432" width="82" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Black Dress">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="fzJ-E7-nng"/>
+                                    <action selector="Buttonw2:" destination="Z6e-Yx-ySo" eventType="touchUpInside" id="PS2-uy-fMi"/>
+                                    <segue destination="dni-3H-qIn" kind="modal" identifier="secondw" id="Khe-Lq-F7D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFK-L9-cVQ">
+                                <rect key="frame" x="109" y="328" width="156" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Upload Your Picture">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadbutton:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="EAZ-RJ-UmA"/>
+                                    <action selector="uploadbuttonw:" destination="Z6e-Yx-ySo" eventType="touchUpInside" id="R5k-cw-tZO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-vP-hbj">
+                                <rect key="frame" x="171" y="470" width="32" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Skirt">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button:" destination="4Vu-yY-6Qa" eventType="touchUpInside" id="y78-Zo-S6x"/>
+                                    <action selector="Buttonw3:" destination="Z6e-Yx-ySo" eventType="touchUpInside" id="92C-wL-AVD"/>
+                                    <segue destination="ClJ-QA-o6X" kind="modal" identifier="thirdw" id="iPV-Jx-bwl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimageww" destination="7gs-h5-snM" id="1h2-yC-HMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJG-pU-A3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291.5" y="1233.5"/>
+        </scene>
+        <!--View Woman3-->
+        <scene sceneID="vsu-f8-ptT">
+            <objects>
+                <viewController id="dni-3H-qIn" customClass="ViewWoman3" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iec-dC-AMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkc-RF-sP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFl-Hu-kxU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUR-25-2dS">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="b40-D1-nie"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-3r-6td">
+                                <rect key="frame" x="228" y="28" width="131" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Go to Fitting Room">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gofit:" destination="pmT-BE-2dI" eventType="touchUpInside" id="1BZ-39-KLb"/>
+                                    <action selector="newbutton:" destination="eey-cu-v5f" eventType="touchUpInside" id="f1D-jg-UDr"/>
+                                    <action selector="newbutton:" destination="eT1-4k-9dO" eventType="touchUpInside" id="pGt-iK-Mnr"/>
+                                    <action selector="newbuttonw:" destination="dni-3H-qIn" eventType="touchUpInside" id="X49-5c-o8Z"/>
+                                    <segue destination="xbj-Nq-WaN" kind="modal" identifier="gotonextw" id="Ufo-8U-yrE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman-t-shirt1" translatesAutoresizingMaskIntoConstraints="NO" id="PyX-c1-poy">
+                                <rect key="frame" x="56" y="66" width="262" height="359"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkS-zF-F2K">
+                                <rect key="frame" x="284" y="427" width="75" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalw3" destination="dkS-zF-F2K" id="zsY-nd-fc7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvN-Kd-p5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.5" y="1419.5"/>
+        </scene>
+        <!--View Woman5-->
+        <scene sceneID="TOz-VO-5qN">
+            <objects>
+                <viewController id="ClJ-QA-o6X" customClass="ViewWoman5" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IkY-DR-jsg"/>
+                        <viewControllerLayoutGuide type="bottom" id="EdJ-bt-0r4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zgU-yp-YGN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman-t-shirt2" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-c0-eAc">
+                                <rect key="frame" x="47" y="66" width="281" height="274"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82O-JH-S6T">
+                                <rect key="frame" x="228" y="28" width="131" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Go to Fitting Room">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gofit:" destination="pmT-BE-2dI" eventType="touchUpInside" id="7ZK-RA-vhh"/>
+                                    <action selector="newbutton:" destination="eey-cu-v5f" eventType="touchUpInside" id="Dvo-Co-uuf"/>
+                                    <action selector="newbutton:" destination="eT1-4k-9dO" eventType="touchUpInside" id="JPV-mX-VfM"/>
+                                    <action selector="newbuttonw:" destination="ClJ-QA-o6X" eventType="touchUpInside" id="iVe-4p-rbo"/>
+                                    <segue destination="Kr7-DI-pmG" kind="modal" identifier="gogow" id="cLM-X8-ivf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URi-MP-OoB">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="VKC-Vh-L2d"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ai7-KK-5JV">
+                                <rect key="frame" x="284" y="427" width="75" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalw5" destination="Ai7-KK-5JV" id="HKo-mI-byy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNY-qU-rRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="859.5" y="2201.5"/>
+        </scene>
+        <!--View Woman6-->
+        <scene sceneID="Q34-JK-pWc">
+            <objects>
+                <viewController id="Kr7-DI-pmG" customClass="ViewWoman6" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="46d-3w-uNe"/>
+                        <viewControllerLayoutGuide type="bottom" id="cYg-Ir-kUo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FCW-VU-a1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mim-gH-kyg">
+                                <rect key="frame" x="96" y="28" width="183" height="589"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjN-Mb-aFF">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="LNT-oR-jPy"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman-t-shirt2" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-Ru-zyj">
+                                <rect key="frame" x="126" y="253" width="123" height="139"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nKG-FG-0iy" appends="YES" id="Igu-Qb-0w5"/>
+                                    <outletCollection property="gestureRecognizers" destination="HpN-0x-sDP" appends="YES" id="aQA-kd-aGN"/>
+                                    <outletCollection property="gestureRecognizers" destination="FHX-RB-z6F" appends="YES" id="Khg-7p-ARJ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mim-gH-kyg" firstAttribute="top" secondItem="46d-3w-uNe" secondAttribute="bottom" constant="8" id="1Sc-kr-N63"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mim-gH-kyg" secondAttribute="trailing" constant="80" id="CER-Qv-RfM"/>
+                            <constraint firstItem="mim-gH-kyg" firstAttribute="leading" secondItem="FCW-VU-a1i" secondAttribute="leadingMargin" constant="80" id="R6J-JL-TqP"/>
+                            <constraint firstItem="cYg-Ir-kUo" firstAttribute="top" secondItem="mim-gH-kyg" secondAttribute="bottom" constant="50" id="jt6-2E-fdk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimagew6" destination="mim-gH-kyg" id="E88-Zs-s1x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBT-ZF-XdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nKG-FG-0iy">
+                    <connections>
+                        <action selector="handlePan:" destination="Kr7-DI-pmG" id="miQ-VW-BOl"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="HpN-0x-sDP">
+                    <connections>
+                        <action selector="handleRotate:" destination="Kr7-DI-pmG" id="S4z-jF-IA9"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="FHX-RB-z6F">
+                    <connections>
+                        <action selector="handlePinch:" destination="Kr7-DI-pmG" id="jYK-Jt-I9E"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1316.5" y="2177.5"/>
+        </scene>
+        <!--View Woman1-->
+        <scene sceneID="Lqe-Kb-zX3">
+            <objects>
+                <viewController id="lPQ-YT-aqi" customClass="ViewWoman1" customModule="Fitting_Room" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u3P-ch-tsc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aqv-0c-rcV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z6R-UB-4Wv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwj-FP-Fbl">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="5kq-Va-SAe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5a-mL-2iO">
+                                <rect key="frame" x="228" y="28" width="131" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Go to Fitting Room">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gofit:" destination="pmT-BE-2dI" eventType="touchUpInside" id="Dq9-rY-p60"/>
+                                    <action selector="gofitw:" destination="lPQ-YT-aqi" eventType="touchUpInside" id="cYw-EU-khR"/>
+                                    <action selector="newbutton:" destination="eT1-4k-9dO" eventType="touchUpInside" id="CYT-CL-njo"/>
+                                    <action selector="newbutton:" destination="eey-cu-v5f" eventType="touchUpInside" id="fr4-X2-ERm"/>
+                                    <segue destination="T8Y-gO-D75" kind="modal" identifier="goodtogow" id="jvh-CJ-5u4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman-t-shirt" translatesAutoresizingMaskIntoConstraints="NO" id="ZrE-Yd-bNe">
+                                <rect key="frame" x="100" y="66" width="175" height="353"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlQ-Er-imk">
+                                <rect key="frame" x="284" y="427" width="75" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalw1" destination="XlQ-Er-imk" id="BkA-cZ-6MK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unO-8T-urQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.5" y="651.5"/>
+        </scene>
+        <!--View Woman2-->
+        <scene sceneID="pxV-Xm-Zc4">
+            <objects>
+                <viewController id="T8Y-gO-D75" customClass="ViewWoman2" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cbl-LT-mpc"/>
+                        <viewControllerLayoutGuide type="bottom" id="8IF-EB-OMt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hTv-4W-xgx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czm-nn-UdG">
+                                <rect key="frame" x="106" y="28" width="163" height="589"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-aN-dZT">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="u0j-ER-ODv"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman-t-shirt1without" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-zF-Cuy">
+                                <rect key="frame" x="108" y="122" width="158" height="301"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bKf-IJ-2nY" appends="YES" id="ZXJ-FU-YoT"/>
+                                    <outletCollection property="gestureRecognizers" destination="bhi-OB-eXN" appends="YES" id="BIc-dJ-RIq"/>
+                                    <outletCollection property="gestureRecognizers" destination="ftV-4R-R2w" appends="YES" id="ptT-Pl-Qih"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="czm-nn-UdG" firstAttribute="leading" secondItem="hTv-4W-xgx" secondAttribute="leadingMargin" constant="90" id="UAL-va-l5D"/>
+                            <constraint firstItem="czm-nn-UdG" firstAttribute="top" secondItem="Cbl-LT-mpc" secondAttribute="bottom" constant="8" id="WAv-Ai-3Wn"/>
+                            <constraint firstItem="8IF-EB-OMt" firstAttribute="top" secondItem="czm-nn-UdG" secondAttribute="bottom" constant="50" id="eEa-5w-Vpd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czm-nn-UdG" secondAttribute="trailing" constant="90" id="ooQ-qA-6As"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimagew2" destination="czm-nn-UdG" id="Nl9-KK-RNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efv-BQ-47t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="bKf-IJ-2nY">
+                    <connections>
+                        <action selector="handlePinch:" destination="T8Y-gO-D75" id="3Gv-og-CcR"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="bhi-OB-eXN">
+                    <connections>
+                        <action selector="handlePan:" destination="T8Y-gO-D75" id="GeS-Kn-BJ8"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="ftV-4R-R2w">
+                    <connections>
+                        <action selector="handleRotate:" destination="T8Y-gO-D75" id="wyW-lt-WJ1"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1316.5" y="651.5"/>
+        </scene>
+        <!--View Woman4-->
+        <scene sceneID="etl-fi-Uv4">
+            <objects>
+                <viewController id="xbj-Nq-WaN" customClass="ViewWoman4" customModule="Fitting_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOH-ze-sm0"/>
+                        <viewControllerLayoutGuide type="bottom" id="pFQ-At-psI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AEK-VE-d5I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u80-Kj-FDn">
+                                <rect key="frame" x="16" y="617" width="35" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z6e-Yx-ySo" kind="modal" id="bvc-Dw-kxV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9CI-HL-cYU">
+                                <rect key="frame" x="96" y="28" width="183" height="589"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman-t-shirt1" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-Tx-D6y">
+                                <rect key="frame" x="125" y="186" width="124" height="296"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VDB-Rb-umu" appends="YES" id="etz-sP-F58"/>
+                                    <outletCollection property="gestureRecognizers" destination="SPd-0m-AAn" appends="YES" id="yiO-VS-swM"/>
+                                    <outletCollection property="gestureRecognizers" destination="7Kn-r6-BaX" appends="YES" id="gnB-1D-mNc"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9CI-HL-cYU" secondAttribute="trailing" constant="80" id="HJF-wk-NUj"/>
+                            <constraint firstItem="pFQ-At-psI" firstAttribute="top" secondItem="9CI-HL-cYU" secondAttribute="bottom" constant="50" id="OkC-AK-XIK"/>
+                            <constraint firstItem="9CI-HL-cYU" firstAttribute="leading" secondItem="AEK-VE-d5I" secondAttribute="leadingMargin" constant="80" id="X9F-BX-yg4"/>
+                            <constraint firstItem="9CI-HL-cYU" firstAttribute="top" secondItem="lOH-ze-sm0" secondAttribute="bottom" constant="8" id="stA-C3-G5W"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="personalimagew4" destination="9CI-HL-cYU" id="WIy-i8-sNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8a-Yj-N6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="VDB-Rb-umu">
+                    <connections>
+                        <action selector="handleRotate:" destination="xbj-Nq-WaN" id="jYg-SM-vvD"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="SPd-0m-AAn">
+                    <connections>
+                        <action selector="handlePinch:" destination="xbj-Nq-WaN" id="h6b-Be-AvA"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="7Kn-r6-BaX">
+                    <connections>
+                        <action selector="handlePan:" destination="xbj-Nq-WaN" id="DPl-G7-JcB"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1316.5" y="1419.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Man-t-shirt" width="998" height="1262"/>
+        <image name="Man-t-shirt1" width="996" height="1281"/>
+        <image name="Man-t-shirt1without" width="996" height="1281"/>
+        <image name="Man-t-shirt2" width="994" height="1269"/>
+        <image name="Man-t-shirt2without" width="998" height="1262"/>
+        <image name="Woman-t-shirt" width="366" height="890"/>
+        <image name="Woman-t-shirt1" width="743" height="1324"/>
+        <image name="Woman-t-shirt1without" width="366" height="890"/>
+        <image name="Woman-t-shirt2" width="997" height="1030"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rz5-KV-wPI"/>
+        <segue reference="u0j-ER-ODv"/>
+        <segue reference="cH8-3M-w3p"/>
+    </inferredMetricsTieBreakers>
+</document>
